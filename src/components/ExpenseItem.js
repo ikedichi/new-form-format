@@ -1,11 +1,16 @@
-import React, {useState} from 'react';
+import React, {useEffect,useState} from 'react';
 import './ExpenseItem.css';
 import ExpenseDate from './ExpenseDate';
-// import Expenses from './Expenses'
+
+
+
 
 const ExpenseItem = (props) => {
     const [title, setTitle] = useState(props.title);
     const [email, setEmail] = useState()
+    const [people, setPeople] = useState([]);
+  // const [editing, setEditing] = useState(false);
+
     
    const clickHandler = () => {
        setTitle(<input id="email" placeholder="change email" onChange={(e)=>setEmail(e.target.value)}></input>
@@ -13,6 +18,7 @@ const ExpenseItem = (props) => {
        console.log(email);
       
    };
+
   
   function cancel(){
     setTitle(props.title)
