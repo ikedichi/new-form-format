@@ -2451,7 +2451,7 @@ const MobilePendingListTemplate = ({
         });
     // console.log('Validation Record for Member:', validationRecord);
     // console.log(
-    //     'Validation Codes for Members:',
+    //     'Validation Codes for Members:wfwefewfewf',
     //     validationRecord?.validationCodes
     // );
     const showAcceptButton = !validationRecord?.validationCodes.includes(
